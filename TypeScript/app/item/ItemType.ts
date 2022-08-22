@@ -11,12 +11,24 @@ export class ItemType {
         return this.item.name;
     }
 
+    set name(name) {
+        this.item.name = name;
+    }
+
     get sellIn() {
         return this.item.sellIn;
     }
 
+    set sellIn(sellIn) {
+        this.item.sellIn = sellIn;
+    }
+
     get quality() {
         return this.item.quality;
+    }
+
+    set quality(quality) {
+        this.item.quality = quality;
     }
 
     degradeQuality(minQuality = 0) {
